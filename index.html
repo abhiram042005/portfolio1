@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <p>Interactive User Interface</p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('certificates')">Certificates</button>
+    <button onclick="showSection('skills')">Skills</button>
+    <button onclick="showSection('login')">Login</button>
+    <button onclick="logout()">Logout</button>
+  </nav>
+
+  <section id="home" class="active">
+    <div class="card">
+      <h1>Welcome to My Portfolio</h1>
+    </div>
+    <div class="self">
+      <h2>HI THERE,</h2>
+      <h2>I'M Abhi</h2>
+      <p>This is the home page. Explore my certificates, skills, and login section.</p>
+    </div>
+    <div class="pic">
+      <img src="./pic_profile-removebg-preview.png" alt="Profile Picture">
+    </div>
+  </section>
+
+  <section id="certificates">
+    <div class="card">
+      <h2>Certificates</h2>
+      <ul id="certificateList"></ul>
+      <br>
+      <input type="file" id="certificateUpload" accept=".pdf,.jpg,.png">
+      <button onclick="uploadCertificate()">Upload Certificate</button>
+    </div>
+  </section>
+<section id="skills">
+  <div class="card">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <label>
+        <input type="checkbox" value="HTML">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" width="30"> HTML
+      </label>
+      <label>
+        <input type="checkbox" value="CSS">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" width="30"> CSS
+      </label>
+      <label>
+        <input type="checkbox" value="JavaScript">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="30"> JavaScript
+      </label>
+      <label>
+        <input type="checkbox" value="Python">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="30"> Python
+      </label>
+      <label>
+        <input type="checkbox" value="SQL">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" width="30"> SQL
+      </label>
+    </div>
+    <br>
+    <button class="submit-btn" onclick="submitSkills()">Submit </button>
+    <p id="skillsMessage"></p>
+  </div>
+</section>
+
+  <section id="login">
+    <div class="card">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Enter Username"><br>
+      <input type="password" id="password" placeholder="Enter Password"><br>
+      <button class="login-btn" onclick="login()">Login</button>
+      <p id="loginMessage"></p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

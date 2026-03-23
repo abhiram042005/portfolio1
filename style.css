@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+header {
+  background: #c4d78e;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+nav {
+  background: #444;
+  display: flex;
+  justify-content: center;
+}
+nav button {
+  background: #444;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+nav button:hover {
+  background: #666;
+}
+section {
+  display: none;
+  padding: 20px;
+  text-align: center;
+}
+section.active {
+  display: block;
+}
+.card {
+  background: #fff;
+  margin: 10px auto;
+  padding: 20px;
+  width: 60%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+input {
+  padding: 8px;
+  margin: 5px;
+  width: 200px;
+}
+.login-btn {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.login-btn:hover {
+  background: #555;
+}
+.skills-list {
+  text-align: left;
+  display: inline-block;
+}
+.skills-list label {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+.skills-list img {
+  margin-right: 8px;
+}
+.self {
+  margin-top: 10px;
+  color: red;
+}
+.pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.pic img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.self p {
+  color: #666;
+}
+.submit-btn {
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.submit-btn:hover {
+  background: #005fa3;
+}
