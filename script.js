@@ -1,7 +1,7 @@
 // Show only login at first
 window.onload = function() {
   showSection("login");
-  document.querySelector("nav").style.display = "none"; // hide nav until login
+  document.querySelector("nav").style.display = "none"; 
 };
 
 function showSection(sectionId) {
@@ -14,7 +14,7 @@ function login() {
   let pass = document.getElementById("password").value;
   let message = document.getElementById("loginMessage");
 
-  if (user === "admin" && pass === "1234") {
+  if (user === "abhi" && pass === "1234") {
     message.innerText = "Login Successful!";
     message.style.color = "green";
 
